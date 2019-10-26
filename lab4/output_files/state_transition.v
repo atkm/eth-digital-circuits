@@ -1,4 +1,4 @@
-module state_transition (input [0:1] now, input c_left, input c_noop, output [0:1] next);
+module state_transition (input [1:0] now, input c_left, input c_noop, output [1:0] next);
 //
 // 00 -(left)-> 01 -(left or noop)-> 10 -(left or noop)-> 11 --> 00 (== next[0] next[1])
 // Goes to 00 otherwise.

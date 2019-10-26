@@ -1,9 +1,9 @@
-module decode (input t_left, input t_reset, input t_right, output [0:2] command);
+module decode (input t_left, input t_reset, input t_right, output [2:0] command);
 //
 // Commands.
-// left  = 100 (== command[0:3])
+// noop  = 100 (== command[2:0])
 // right = 010
-// noop  = 001
+// left  = 001
 //
 // left  iff t_left
 // right iff t_right

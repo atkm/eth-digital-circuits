@@ -1,4 +1,4 @@
-module flashing_out (input [0:1] state, output [0:2] out);
+module flashing_out (input [1:0] state, output [2:0] out);
 // Base = 00 (== state)
 // L1   = 01
 // L2   = 10
